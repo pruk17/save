@@ -45,7 +45,7 @@ def generate_launch_description():
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'MiniP_bot',#<--- เปลี่ยนชื่อหุ่นยนต์ตรงนี้
-                                   '-x', '0', '-y', '0', '-z', '.4',# Set initial point
+                                   '-x', '0', '-y', '0', '-z', '0.6',# Set initial point
                                    '-R', '0', '-P', '0', '-Y', '1.57'# Set Rotage
                                 ],
                         output='screen')
