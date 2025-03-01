@@ -17,12 +17,10 @@ def generate_launch_description():
 
     package_name='articubot_one' #<--- เปลี่ยนPackageตรงนี้
 
-    # Path to the parameter file for SLAM
-    slam_params = os.path.join(
-        get_package_share_directory(package_name), 
-        'config', 
-        'mapper_params_online_async.yaml'  # Ensure this file exists in the specified path
-    )
+    
+    # Paths to parameter files
+    slam_params = os.path.join(get_package_share_directory(package_name), 'config', 'mapper_params_online_async.yaml')# Path to the parameter file for SLAM
+    nav2_params = os.path.join(get_package_share_directory(package_name), 'config', 'nav2_params.yaml')
 
 
     rsp = IncludeLaunchDescription(
@@ -58,28 +56,28 @@ def generate_launch_description():
                 launch_arguments={'use_sim_time': 'true', 'params_file': slam_params}.items()
     )
 
-    # Node for twist_mux
+    # Nav2 Stack
+    nav2 = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('nav2_bringup'), 'launch', 'navigation_launch.py')]),
+        launch_arguments={'use_sim_time': 'true', 'params_file': nav2_params}.items()
+    )
+
     twist_mux = Node(
-        package='twist_mux',
-        executable='twist_mux',
+        package='twist_mux', 
+        executable='twist_mux', 
         output='screen',
-        parameters=[
-            os.path.join(
-                get_package_share_directory(package_name), 
-                'config', 
-                'twist_mux.yaml'  # Ensure this file exists in the specified path
-            )
-        ],
-        remappings=[
-            ('cmd_vel_out', 'diff_cont/cmd_vel_unstamped')  # Remap output topic
-        ]
+        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'twist_mux.yaml')],
+        remappings=[('/cmd_vel', '/diff_cont/cmd_vel_unstamped')]  # Nav2 → twist_mux
     )
 
     # Launch them all!
     return LaunchDescription([
+        nav2,
         rsp,
         gazebo,
         spawn_entity,
         twist_mux,
-        slam
+        slam,
+        
     ])
