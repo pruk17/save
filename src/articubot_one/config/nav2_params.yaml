@@ -19,7 +19,7 @@ controller_server:
       max_angular_vel: 2.5
       lookahead_dist: 0.6
       transform_tolerance: 0.5
-    cmd_vel_topic: "diff_cont/cmd_vel_unstamped"  # Align with twist_mux
+    cmd_vel_topic: /cmd_vel  #Matches diff_drive_controller
 
 global_costmap:
   ros__parameters:

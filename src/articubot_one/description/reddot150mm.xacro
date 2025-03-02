@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+    
+    <link name="box_link">
+        <static>false</static>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="RedD.dae" scale="1 1 1"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="RedD.dae" scale="1 1 1"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Gazebo settings to ensure proper visualization and interaction -->
+    <gazebo reference="box_link">
+        <material>Gazebo/Red</material>
+        <collision>
+            <geometry>
+                <mesh filename="RedD.dae" scale="1 1 1"/>
+            </geometry>
+        </collision>
+        <gravity>1</gravity>
+    </gazebo>
+
+    <!-- Connect box_link to base_link via a floating joint -->
+    <joint name="box_to_base" type="floating">
+        <parent link="base_link"/>
+        <child link="box_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Add Gazebo plugin for gripper functionality (optional) -->
+    <gazebo>
+        <plugin name="gripper_plugin" filename="libgazebo_ros_gripper.so">
+            <robotNamespace>/articubot</robotNamespace>
+        </plugin>
+    </gazebo>
+
+</robot>
