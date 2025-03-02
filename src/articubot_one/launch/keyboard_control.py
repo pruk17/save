@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#to use: (in cmd) python3 keyboard_control.py 
+
 
 import sys
 import tty

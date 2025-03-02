@@ -70,6 +70,14 @@ def generate_launch_description():
         parameters=[os.path.join(pkg_share, 'config', 'twist_mux.yaml')],
         remappings=[('/cmd_vel', '/diff_cont/cmd_vel_unstamped')],
     )
+    controller_manager = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "joint_state_broadcaster",
+            "gripper_controller",
+        ],
+    )
 
 
     # Launch them all!
@@ -80,6 +88,6 @@ def generate_launch_description():
         spawn_entity,
         twist_mux,
         slam,
-    
+        controller_manager
     
     ])
