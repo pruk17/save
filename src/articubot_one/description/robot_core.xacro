@@ -89,13 +89,13 @@
     <joint name="left_bumper_joint" type="fixed">
         <parent link="chassis"/>
         <child link="left_bumper"/>
-        <origin xyz="0.247 0.2 0.09" rpy="0 0 0"/>  <!-- Front edge of chassis -->
+        <origin xyz="0.247 0.2 0.09" rpy="0 0 0"/>  
     </joint>
     <!-- ================================================== -->
     <link name="left_bumper">
         <visual>
             <geometry>
-                <cylinder length="0.12" radius="0.05"/>  <!-- Half chassis height -->
+                <cylinder length="0.12" radius="0.05"/>  
             </geometry>
             <material name="white"/>
         </visual>
@@ -110,7 +110,7 @@
     </link>
     <gazebo reference="left_bumper">
         <material>Gazebo/White</material>
-        <mu1 value="0.3"/>  <!-- Smoother sliding -->
+        <mu1 value="0.3"/>  
         <mu2 value="0.3"/>
     </gazebo>
 
@@ -118,7 +118,7 @@
     <joint name="right_bumper_joint" type="fixed">
         <parent link="chassis"/>
         <child link="right_bumper"/>
-        <origin xyz="0.247 -0.2 0.09" rpy="0 0 0"/>  <!-- Rear edge of chassis -->
+        <origin xyz="0.247 -0.2 0.09" rpy="0 0 0"/>  
     </joint>
     <!-- ================================================== -->
     <link name="right_bumper">
