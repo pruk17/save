@@ -22,7 +22,7 @@ class keyboard_control(Node):
         )
         
         self.cmd_vel_pub = self.create_publisher(
-            Twist, '/diff_cont/cmd_vel_unstamped', qos_profile=qos.qos_profile_system_default
+            Twist, 'cmd_vel', qos_profile=qos.qos_profile_system_default
         )
         
         self.gripper_pub = self.create_publisher(

@@ -27,8 +27,8 @@
             <surface>
                 <friction>
                     <ode>
-                        <mu>2.0</mu>  <!-- Increase primary friction -->
-                        <mu2>2.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>3.0</mu>  <!-- Increase primary friction -->
+                        <mu2>3.0</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -62,20 +62,20 @@
         <visual>
             <origin xyz="-0.075 -0.1 0" rpy="0 0 0"/>
             <geometry>
-                <box size="0.0225 0.2 0.05"/>
+                <box size="0.0225 0.2 0.06"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <origin xyz="-0.075 -0.1 0" rpy="0 0 0"/>
             <geometry>
-                <box size="0.0225 0.2 0.05"/>
+                <box size="0.0225 0.2 0.06"/>
             </geometry>
             <surface>
                 <friction>
                     <ode>
-                        <mu>2.0</mu>  <!-- Increase primary friction -->
-                        <mu2>2.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>3.0</mu>  <!-- Increase primary friction -->
+                        <mu2>3.0</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -90,7 +90,7 @@
                 </contact>
             </surface>
         </collision>
-        <xacro:inertial_box mass="0.05" x="0.0225" y="0.2" z="0.05" >
+        <xacro:inertial_box mass="0.1" x="0.0225" y="0.2" z="0.06" >
             <origin xyz="-0.075 -0.1 0" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -109,20 +109,20 @@
         <visual>
             <origin xyz="0.075 -0.10 0" rpy="0 0 0"/>
             <geometry>
-                <box size="0.0225 0.2 0.05"/>
+                <box size="0.0225 0.2 0.06"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <origin xyz="0.075 -0.10 0" rpy="0 0 0"/>
             <geometry>
-                <box size="0.0225 0.2 0.05"/>
+                <box size="0.0225 0.2 0.06"/>
             </geometry>
             <surface>
                 <friction>
                     <ode>
-                        <mu>2.0</mu>  <!-- Increase primary friction -->
-                        <mu2>2.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>3.0</mu>  <!-- Increase primary friction -->
+                        <mu2>3.0</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -137,7 +137,7 @@
                 </contact>
             </surface>
         </collision>
-        <xacro:inertial_box mass="0.05" x="0.0225" y="0.2" z="0.05" >
+        <xacro:inertial_box mass="0.1" x="0.0225" y="0.2" z="0.06" >
             <origin xyz="0.075 -0.1 0" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
