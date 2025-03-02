@@ -43,7 +43,7 @@
                 </contact>
             </surface>
         </collision>
-        <xacro:inertial_box mass="0.2" x="0.35" y="0.05" z="0.06" >
+        <xacro:inertial_box mass="0.1" x="0.35" y="0.05" z="0.06" >
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -90,7 +90,7 @@
                 </contact>
             </surface>
         </collision>
-        <xacro:inertial_box mass="0.1" x="0.0225" y="0.2" z="0.05" >
+        <xacro:inertial_box mass="0.05" x="0.0225" y="0.2" z="0.05" >
             <origin xyz="-0.075 -0.1 0" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -137,7 +137,7 @@
                 </contact>
             </surface>
         </collision>
-        <xacro:inertial_box mass="0.1" x="0.0225" y="0.2" z="0.05" >
+        <xacro:inertial_box mass="0.05" x="0.0225" y="0.2" z="0.05" >
             <origin xyz="0.075 -0.1 0" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>

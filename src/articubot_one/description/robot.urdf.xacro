@@ -6,12 +6,11 @@
     <xacro:include filename="gazebo_control.xacro" />
     <xacro:include filename="lidar.xacro" />
     
+    
     <xacro:include filename="gripper.xacro" />
-    <xacro:include filename="gripper_vertical_tranmission.xacro" />
-    <xacro:include filename="gripper_finger_left_tranmission.xacro" />
-    <xacro:include filename="gripper_finger_right_tranmission.xacro" />
-    <xacro:include filename="robot_control.urdf.xacro"/>
-    <!---
+    <xacro:include filename="gripper_tranmission.xacro" />
+    <xacro:include filename="gazebo_plugin.xacro"/>
+
     <xacro:robot_controller/> 
     <ros2_control name="gripper_robot_gazebo_system" type="system">
         <hardware>
@@ -20,6 +19,6 @@
         <xacro:gripper_vertical_tranmission/>
         <xacro:gripper_finger_left_tranmission/>
         <xacro:gripper_finger_right_tranmission/>
-    </ros2_control> -->
+    </ros2_control>
 
 </robot>
