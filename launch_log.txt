@@ -1,0 +1,251 @@
+[INFO] [launch]: All log files can be found below /home/chaiyapruk/.ros/log/2025-03-02-22-29-27-535398-chaiyapruk-Nitro-AN515-56-37378
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [37379]
+[INFO] [gzserver-2]: process started with pid [37381]
+[INFO] [gzclient-3]: process started with pid [37383]
+[INFO] [spawn_entity.py-4]: process started with pid [37385]
+[INFO] [async_slam_toolbox_node-5]: process started with pid [37387]
+[INFO] [controller_server-6]: process started with pid [37389]
+[INFO] [smoother_server-7]: process started with pid [37391]
+[INFO] [planner_server-8]: process started with pid [37393]
+[INFO] [behavior_server-9]: process started with pid [37397]
+[INFO] [bt_navigator-10]: process started with pid [37412]
+[INFO] [waypoint_follower-11]: process started with pid [37426]
+[INFO] [velocity_smoother-12]: process started with pid [37432]
+[INFO] [lifecycle_manager-13]: process started with pid [37434]
+[INFO] [twist_mux-14]: process started with pid [37438]
+[INFO] [spawner-15]: process started with pid [37451]
+[INFO] [spawner-16]: process started with pid [37454]
+[INFO] [spawner-17]: process started with pid [37458]
+[robot_state_publisher-1] [INFO] [1740929368.133150827] [robot_state_publisher]: got segment back_left_wheel
+[robot_state_publisher-1] [INFO] [1740929368.133252531] [robot_state_publisher]: got segment back_right_wheel
+[robot_state_publisher-1] [INFO] [1740929368.133259850] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-1] [INFO] [1740929368.133265241] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1740929368.133270076] [robot_state_publisher]: got segment chassis
+[robot_state_publisher-1] [INFO] [1740929368.133274605] [robot_state_publisher]: got segment front_bumper
+[robot_state_publisher-1] [INFO] [1740929368.133279240] [robot_state_publisher]: got segment front_left_wheel
+[robot_state_publisher-1] [INFO] [1740929368.133284379] [robot_state_publisher]: got segment front_right_wheel
+[robot_state_publisher-1] [INFO] [1740929368.133288996] [robot_state_publisher]: got segment gripper_base
+[robot_state_publisher-1] [INFO] [1740929368.133293666] [robot_state_publisher]: got segment gripper_finger_left
+[robot_state_publisher-1] [INFO] [1740929368.133298388] [robot_state_publisher]: got segment gripper_finger_right
+[robot_state_publisher-1] [INFO] [1740929368.133303421] [robot_state_publisher]: got segment laser_frame
+[robot_state_publisher-1] [INFO] [1740929368.133308628] [robot_state_publisher]: got segment left_bumper
+[robot_state_publisher-1] [INFO] [1740929368.133313212] [robot_state_publisher]: got segment rear_back_left_wheel
+[robot_state_publisher-1] [INFO] [1740929368.133317962] [robot_state_publisher]: got segment rear_back_right_wheel
+[robot_state_publisher-1] [INFO] [1740929368.133322847] [robot_state_publisher]: got segment right_bumper
+[smoother_server-7] [INFO] [1740929368.147428014] [smoother_server]: 
+[smoother_server-7] 	smoother_server lifecycle node launched. 
+[smoother_server-7] 	Waiting on external lifecycle transitions to activate
+[smoother_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-7] [INFO] [1740929368.149096871] [smoother_server]: Creating smoother server
+[controller_server-6] [INFO] [1740929368.159102128] [controller_server]: 
+[controller_server-6] 	controller_server lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-8] [INFO] [1740929368.164007255] [planner_server]: 
+[planner_server-8] 	planner_server lifecycle node launched. 
+[planner_server-8] 	Waiting on external lifecycle transitions to activate
+[planner_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[async_slam_toolbox_node-5] [INFO] [1740929368.164272888] [slam_toolbox]: Node using stack size 40000000
+[controller_server-6] [INFO] [1740929368.171524720] [controller_server]: Creating controller server
+[planner_server-8] [INFO] [1740929368.165807385] [planner_server]: Creating
+[bt_navigator-10] [INFO] [1740929368.181998115] [bt_navigator]: 
+[bt_navigator-10] 	bt_navigator lifecycle node launched. 
+[bt_navigator-10] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-10] [INFO] [1740929368.182128664] [bt_navigator]: Creating
+[lifecycle_manager-13] [INFO] [1740929368.207535274] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-13] [INFO] [1740929368.216425685] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-8] [INFO] [1740929368.243726648] [global_costmap.global_costmap]: 
+[planner_server-8] 	global_costmap lifecycle node launched. 
+[planner_server-8] 	Waiting on external lifecycle transitions to activate
+[planner_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-8] [INFO] [1740929368.244328506] [global_costmap.global_costmap]: Creating Costmap
+[twist_mux-14] [INFO] [1740929368.248376322] [twist_mux]: Topic handler 'topics.keyboard' subscribed to topic 'cmd_vel_key': timeout = 0.500000s , priority = 100.
+[waypoint_follower-11] [INFO] [1740929368.251944574] [waypoint_follower]: 
+[waypoint_follower-11] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-11] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-11] [INFO] [1740929368.253963486] [waypoint_follower]: Creating
+[twist_mux-14] [INFO] [1740929368.253180980] [twist_mux]: Topic handler 'topics.navigation' subscribed to topic 'cmd_vel': timeout = 0.500000s , priority = 10.
+[controller_server-6] [INFO] [1740929368.255189452] [local_costmap.local_costmap]: 
+[controller_server-6] 	local_costmap lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-6] [INFO] [1740929368.255760309] [local_costmap.local_costmap]: Creating Costmap
+[controller_server-6] terminate called after throwing an instance of 'rclcpp::exceptions::InvalidParameterTypeException'
+[controller_server-6]   what():  parameter 'height' has invalid type: Wrong parameter type, parameter {height} is of type {integer}, setting it to {double} is not allowed.
+[velocity_smoother-12] [INFO] [1740929368.274725539] [velocity_smoother]: 
+[velocity_smoother-12] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-12] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-9] [INFO] [1740929368.279036264] [behavior_server]: 
+[behavior_server-9] 	behavior_server lifecycle node launched. 
+[behavior_server-9] 	Waiting on external lifecycle transitions to activate
+[behavior_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[async_slam_toolbox_node-5] [INFO] [1740929368.296162524] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-5] [INFO] [1740929368.297138942] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[lifecycle_manager-13] [INFO] [1740929368.365827380] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-13] [INFO] [1740929368.365883633] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[spawner-15] [INFO] [1740929368.586209839] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-16] [INFO] [1740929368.592953594] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-17] [INFO] [1740929368.637161602] [spawner_diff_drive_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawn_entity.py-4] [INFO] [1740929368.675604509] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1740929368.675879628] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-4] [INFO] [1740929368.678329232] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-4] [INFO] [1740929368.689011154] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-4] [INFO] [1740929368.689239526] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-4] [INFO] [1740929368.943643081] [spawn_entity]: Calling service /spawn_entity
+[spawn_entity.py-4] [INFO] [1740929368.995686122] [spawn_entity]: Spawn status: Entity pushed to spawn queue, but spawn service timed outwaiting for entity to appear in simulation under the name [MiniP_bot]
+[spawn_entity.py-4] [ERROR] [1740929368.995917502] [spawn_entity]: Spawn service failed. Exiting.
+[ERROR] [spawn_entity.py-4]: process has died [pid 37385, exit code 1, cmd '/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -topic robot_description -entity MiniP_bot -x 0 -y 0 -z 0.6 -R 0 -P 0 -Y 1.57 --ros-args --params-file /tmp/launch_params_dugwiw6z'].
+[gzserver-2] [WARN] [1740929369.268109272] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+[gzserver-2] [WARN] [1740929369.281931306] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+[ERROR] [controller_server-6]: process has died [pid 37389, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args --params-file /tmp/launch_params_mzqiuraj -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[gzserver-2] [INFO] [1740929369.401371059] [diff_drive]: Wheel pair 1 separation set to [0.450000m]
+[gzserver-2] [INFO] [1740929369.401624301] [diff_drive]: Wheel pair 1 diameter set to [0.140000m]
+[gzserver-2] [INFO] [1740929369.404162870] [diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-2] [INFO] [1740929369.407777893] [diff_drive]: Advertise odometry on [/odom]
+[gzserver-2] [INFO] [1740929369.413180825] [diff_drive]: Publishing odom transforms between [odom] and [base_link]
+[gzserver-2] [INFO] [1740929369.413272518] [diff_drive]: Publishing wheel transforms between [base_link], [back_left_wheel_joint] and [back_right_wheel_joint]
+[gzserver-2] [INFO] [1740929369.413288442] [diff_drive]: Publishing wheel transforms between [base_link], [front_left_wheel_joint] and [front_right_wheel_joint]
+[gzserver-2] [INFO] [1740929369.423353714] [rear_wheel]: Wheel pair 1 separation set to [0.450000m]
+[gzserver-2] [INFO] [1740929369.423406933] [rear_wheel]: Wheel pair 1 diameter set to [0.140000m]
+[gzserver-2] [INFO] [1740929369.424078133] [rear_wheel]: Subscribed to [/cmd_vel]
+[gzserver-2] [INFO] [1740929369.424920491] [rear_wheel]: Advertise odometry on [/odom]
+[gzserver-2] [INFO] [1740929369.428197971] [rear_wheel]: Publishing odom transforms between [odom] and [base_link]
+[gzserver-2] [INFO] [1740929369.428277422] [rear_wheel]: Publishing wheel transforms between [base_link], [rear_back_left_wheel_joint] and [rear_back_right_wheel_joint]
+[gzserver-2] [INFO] [1740929369.446202407] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gzserver-2] [INFO] [1740929369.457154000] [gazebo_ros2_control_robot]: Starting gazebo_ros2_control plugin in namespace: /
+[gzserver-2] [INFO] [1740929369.457252119] [gazebo_ros2_control_robot]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control_robot
+[gzserver-2] [INFO] [1740929369.467059291] [gazebo_ros2_control_robot]: connected to service!! robot_state_publisher
+[gzserver-2] [INFO] [1740929369.468834288] [gazebo_ros2_control_robot]: Received urdf from param server, parsing...
+[gzserver-2] [INFO] [1740929369.468995134] [gazebo_ros2_control_robot]: Loading parameter files /home/chaiyapruk/MiniProject_ws/install/articubot_one/share/articubot_one/config/velocity_controllers.yaml
+[gzserver-2] [INFO] [1740929369.478600985] [gazebo_ros2_control_robot]: Loading joint: gripper_vertical_joint
+[gzserver-2] [INFO] [1740929369.478671279] [gazebo_ros2_control_robot]: 	State:
+[gzserver-2] [INFO] [1740929369.478684083] [gazebo_ros2_control_robot]: 		 position
+[gzserver-2] [INFO] [1740929369.478692476] [gazebo_ros2_control_robot]: 		 velocity
+[gzserver-2] [INFO] [1740929369.478699087] [gazebo_ros2_control_robot]: 	Command:
+[gzserver-2] [INFO] [1740929369.478785958] [gazebo_ros2_control_robot]: 		 velocity
+[gzserver-2] [INFO] [1740929369.479172296] [gazebo_ros2_control_robot]: Loading joint: gripper_finger_left_joint
+[gzserver-2] [INFO] [1740929369.479194903] [gazebo_ros2_control_robot]: 	State:
+[gzserver-2] [INFO] [1740929369.479203384] [gazebo_ros2_control_robot]: 		 position
+[gzserver-2] [INFO] [1740929369.479211668] [gazebo_ros2_control_robot]: 		 velocity
+[gzserver-2] [INFO] [1740929369.479218858] [gazebo_ros2_control_robot]: 	Command:
+[gzserver-2] [INFO] [1740929369.479245616] [gazebo_ros2_control_robot]: 		 velocity
+[gzserver-2] [INFO] [1740929369.479431154] [gazebo_ros2_control_robot]: Loading joint: gripper_finger_right_joint
+[gzserver-2] [INFO] [1740929369.479447166] [gazebo_ros2_control_robot]: 	State:
+[gzserver-2] [INFO] [1740929369.479454719] [gazebo_ros2_control_robot]: 		 position
+[gzserver-2] [INFO] [1740929369.479462578] [gazebo_ros2_control_robot]: 		 velocity
+[gzserver-2] [INFO] [1740929369.479469504] [gazebo_ros2_control_robot]: 	Command:
+[gzserver-2] [INFO] [1740929369.479487380] [gazebo_ros2_control_robot]: 		 velocity
+[gzserver-2] [INFO] [1740929369.479683218] [resource_manager]: Initialize hardware 'gripper_robot_gazebo_system' 
+[gzserver-2] [INFO] [1740929369.479845393] [resource_manager]: Successful initialization of hardware 'gripper_robot_gazebo_system'
+[gzserver-2] [INFO] [1740929369.479935832] [resource_manager]: 'configure' hardware 'gripper_robot_gazebo_system' 
+[gzserver-2] [INFO] [1740929369.479946301] [resource_manager]: Successful 'configure' of hardware 'gripper_robot_gazebo_system'
+[gzserver-2] [INFO] [1740929369.479953476] [resource_manager]: 'activate' hardware 'gripper_robot_gazebo_system' 
+[gzserver-2] [INFO] [1740929369.479987009] [resource_manager]: Successful 'activate' of hardware 'gripper_robot_gazebo_system'
+[gzserver-2] [INFO] [1740929369.480071730] [gazebo_ros2_control_robot]: Loading controller_manager
+[gzserver-2] [WARN] [1740929369.514574010] [gazebo_ros2_control_robot]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gzserver-2] [INFO] [1740929369.514851406] [gazebo_ros2_control_robot]: Loaded gazebo_ros2_control.
+[gzserver-2] [INFO] [1740929369.590674627] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-15] [INFO] [1740929369.633921206] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gzserver-2] [INFO] [1740929369.638916602] [controller_manager]: Loading controller 'gripper_controller'
+[gzserver-2] [WARN] [1740929369.661739171] [gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[gzserver-2] [INFO] [1740929369.682485141] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gzserver-2] [INFO] [1740929369.682748803] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-16] [INFO] [1740929369.683497613] [spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
+[gzserver-2] [INFO] [1740929369.706228153] [controller_manager]: Configuring controller 'gripper_controller'
+[gzserver-2] [INFO] [1740929369.706443595] [gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gzserver-2] [WARN] [1740929369.706518298] [gripper_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-2] [WARN] [1740929369.706790583] [gripper_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-2] [WARN] [1740929369.708159191] [gripper_controller]: 'ff_velocity_scale' parameters is not defined under 'gains.<joint_name>.' structure. Maybe you are using deprecated format 'ff_velocity_scale/<joint_name>'!
+[gzserver-2] [INFO] [1740929369.708284027] [gripper_controller]: Command interfaces are [velocity] and state interfaces are [position velocity].
+[gzserver-2] [INFO] [1740929369.708387209] [gripper_controller]: Using 'splines' interpolation method.
+[gzserver-2] [INFO] [1740929369.713967318] [gripper_controller]: Controller state will be published at 50.00 Hz.
+[gzserver-2] [INFO] [1740929369.716510968] [gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[gzserver-2] [INFO] [1740929369.730405917] [controller_manager]: Loading controller 'diff_drive_controller'
+[spawner-17] [INFO] [1740929369.753078960] [spawner_diff_drive_controller]: [94mLoaded [1mdiff_drive_controller[0m
+[gzserver-2] [INFO] [1740929369.795793241] [controller_manager]: Configuring controller 'diff_drive_controller'
+[spawner-15] [INFO] [1740929369.796437062] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[async_slam_toolbox_node-5] [INFO] [1740929369.840444280] [slam_toolbox]: Message Filter dropping message: frame 'laser_frame' at time 90.293 for reason 'discarding message because the queue is full'
+[async_slam_toolbox_node-5] [WARN] [1740929369.859690638] [slam_toolbox]: minimum laser range setting (0.0 m) exceeds the capabilities of the used Lidar (0.4 m)
+[async_slam_toolbox_node-5] [WARN] [1740929369.859798946] [slam_toolbox]: maximum laser range setting (20.0 m) exceeds the capabilities of the used Lidar (12.0 m)
+[async_slam_toolbox_node-5] Registering sensor: [Custom Described Lidar]
+[gzserver-2] [ERROR] [1740929369.862047492] [resource_manager]: Not acceptable command interfaces combination: 
+[gzserver-2] Start interfaces: 
+[gzserver-2] [
+[gzserver-2]   front_left_wheel_joint/velocity
+[gzserver-2]   back_left_wheel_joint/velocity
+[gzserver-2]   rear_back_left_wheel_joint/velocity
+[gzserver-2]   front_right_wheel_joint/velocity
+[gzserver-2]   back_right_wheel_joint/velocity
+[gzserver-2]   rear_back_right_wheel_joint/velocity
+[gzserver-2] ]
+[gzserver-2] Stop interfaces: 
+[gzserver-2] [
+[gzserver-2] ]
+[gzserver-2] Not existing: 
+[gzserver-2] [
+[gzserver-2]  front_left_wheel_joint/velocity
+[gzserver-2]  back_left_wheel_joint/velocity
+[gzserver-2]  rear_back_left_wheel_joint/velocity
+[gzserver-2]  front_right_wheel_joint/velocity
+[gzserver-2]  back_right_wheel_joint/velocity
+[gzserver-2]  rear_back_right_wheel_joint/velocity
+[gzserver-2] ]
+[gzserver-2] 
+[gzserver-2] [ERROR] [1740929369.862079146] [controller_manager]: Could not switch controllers since prepare command mode switch was rejected.
+[spawner-16] [INFO] [1740929369.862736189] [spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m
+[spawner-17] [ERROR] [1740929369.863181487] [spawner_diff_drive_controller]: [91mFailed to activate controller : diff_drive_controller[0m
+[INFO] [spawner-15]: process has finished cleanly [pid 37451]
+[INFO] [spawner-16]: process has finished cleanly [pid 37454]
+[ERROR] [spawner-17]: process has died [pid 37458, exit code 1, cmd '/opt/ros/humble/lib/controller_manager/spawner diff_drive_controller --controller-manager /controller_manager --ros-args'].
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[twist_mux-14] [INFO] [1740929370.132152558] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-10] [INFO] [1740929370.132158511] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-10] [INFO] [1740929370.132695075] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-10] [INFO] [1740929370.132746263] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[velocity_smoother-12] [INFO] [1740929370.132157530] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-12] [INFO] [1740929370.132280830] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-12] [INFO] [1740929370.132350452] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[behavior_server-9] [INFO] [1740929370.132168941] [rclcpp]: signal_handler(signum=2)
+[behavior_server-9] [INFO] [1740929370.132751630] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-9] [INFO] [1740929370.132800302] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[planner_server-8] [INFO] [1740929370.132171684] [rclcpp]: signal_handler(signum=2)
+[planner_server-8] [INFO] [1740929370.132282773] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-8] [INFO] [1740929370.132349812] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[lifecycle_manager-13] [INFO] [1740929370.132213803] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-13] [INFO] [1740929370.132300118] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[waypoint_follower-11] [INFO] [1740929370.132219558] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-11] [INFO] [1740929370.132296618] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-11] [INFO] [1740929370.132349831] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[smoother_server-7] [INFO] [1740929370.132319451] [rclcpp]: signal_handler(signum=2)
+[smoother_server-7] [INFO] [1740929370.132405681] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-7] [INFO] [1740929370.132454890] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[async_slam_toolbox_node-5] [INFO] [1740929370.132662889] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-1] [INFO] [1740929370.132729544] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-10] [INFO] [1740929370.135174569] [bt_navigator]: Destroying
+[smoother_server-7] [INFO] [1740929370.136118577] [smoother_server]: Destroying
+[planner_server-8] [INFO] [1740929370.137042027] [global_costmap.global_costmap]: Destroying
+[waypoint_follower-11] [INFO] [1740929370.138925174] [waypoint_follower]: Destroying
+[behavior_server-9] [INFO] [1740929370.139411328] [behavior_server]: Destroying
+[velocity_smoother-12] [INFO] [1740929370.140486437] [velocity_smoother]: Destroying
+[planner_server-8] [INFO] [1740929370.191532397] [planner_server]: Destroying
+[INFO] [async_slam_toolbox_node-5]: process has finished cleanly [pid 37387]
+[INFO] [behavior_server-9]: process has finished cleanly [pid 37397]
+[INFO] [waypoint_follower-11]: process has finished cleanly [pid 37426]
+[INFO] [smoother_server-7]: process has finished cleanly [pid 37391]
+[INFO] [twist_mux-14]: process has finished cleanly [pid 37438]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 37379]
+[INFO] [bt_navigator-10]: process has finished cleanly [pid 37412]
+[INFO] [velocity_smoother-12]: process has finished cleanly [pid 37432]
+[INFO] [planner_server-8]: process has finished cleanly [pid 37393]
+[INFO] [gzserver-2]: process has finished cleanly [pid 37381]
+[INFO] [gzclient-3]: process has finished cleanly [pid 37383]
+[ERROR] [lifecycle_manager-13]: process[lifecycle_manager-13] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [lifecycle_manager-13]: sending signal 'SIGTERM' to process[lifecycle_manager-13]
+[lifecycle_manager-13] [INFO] [1740929375.150700927] [rclcpp]: signal_handler(signum=15)
+[ERROR] [lifecycle_manager-13]: process[lifecycle_manager-13] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [lifecycle_manager-13]: sending signal 'SIGKILL' to process[lifecycle_manager-13]
+[ERROR] [lifecycle_manager-13]: process has died [pid 37434, exit code -9, cmd '/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args --log-level info --ros-args -r __node:=lifecycle_manager_navigation --params-file /tmp/launch_params_pcbnrcb6 --params-file /tmp/launch_params_c45xws1u --params-file /tmp/launch_params_bydqtgr0'].

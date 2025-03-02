@@ -5,6 +5,7 @@ from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
+from launch.actions import ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
@@ -16,12 +17,13 @@ def generate_launch_description():
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
 
     package_name='articubot_one' #<--- เปลี่ยนPackageตรงนี้
-
     
     # Paths to parameter files
-    slam_params = os.path.join(get_package_share_directory(package_name), 'config', 'mapper_params_online_async.yaml')# Path to the parameter file for SLAM
-    nav2_params = os.path.join(get_package_share_directory(package_name), 'config', 'nav2_params.yaml')
-
+    pkg_share = get_package_share_directory(package_name)
+    world_file = os.path.join(pkg_share, 'worlds', 'MNP_mapNoBot.world')
+    nav2_params = os.path.join(pkg_share, 'config', 'nav2_params.yaml')
+    slam_params = os.path.join(pkg_share, 'config', 'mapper_params_online_async.yaml')
+    
 
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -34,9 +36,7 @@ def generate_launch_description():
              PythonLaunchDescriptionSource([os.path.join(
                 get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
              launch_arguments={
-                 'world': os.path.join(get_package_share_directory(package_name), 'worlds', 'MNP_mapNoBot.world'),
-                 'use_sim_time': 'true' 
-             }.items(),
+                 'world': world_file,'use_sim_time': 'true'}.items(),
     )
 
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
@@ -67,9 +67,10 @@ def generate_launch_description():
         package='twist_mux',
         executable='twist_mux',
         output='screen',
-        parameters=[os.path.join(get_package_share_directory('articubot_one'), 'config', 'twist_mux.yaml')],
+        parameters=[os.path.join(pkg_share, 'config', 'twist_mux.yaml')],
         remappings=[('/cmd_vel', '/diff_cont/cmd_vel_unstamped')],
     )
+
 
     # Launch them all!
     return LaunchDescription([
@@ -79,5 +80,6 @@ def generate_launch_description():
         spawn_entity,
         twist_mux,
         slam,
-        
+    
+    
     ])
