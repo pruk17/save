@@ -32,6 +32,9 @@
     <material name="pink">
         <color rgba="1 0.4 0.7 1" />
     </material>
+    <material name="cyan" >
+    <color rgba="0.0 1.0 1.0 1.0" />
+  </material>
 
 
     <!-- BASE LINK -->
@@ -60,19 +63,19 @@
 
     <link name="chassis">
         <visual>
-            <origin xyz="0 0 0.1" rpy="0 0 0"/>
+            <origin xyz="-0.05 0 0.1" rpy="0 0 0"/>
             <geometry>
-                <box size="0.7 0.5 0.15"/>
+                <box size="0.6 0.5 0.15"/>
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
             <origin xyz="0 0 0.075" rpy="0 0 0"/>
             <geometry>
-                <box size="0.7 0.5 0.15"/>
+                <box size="0.6 0.5 0.15"/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass="0.8" x="0.7" y="0.5" z="0.15">
+        <xacro:inertial_box mass="0.4" x="0.6" y="0.5" z="0.15">
             <origin xyz="0 0 0.075" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -80,6 +83,96 @@
         <material>Gazebo/White</material>
         <mu1 value="0.5"/>
         <mu2 value="0.5"/>
+    </gazebo>
+
+    <!-- ================================================== LEFT BUMPER (Rounded Edge) ================================================== -->
+    <joint name="left_bumper_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="left_bumper"/>
+        <origin xyz="0.247 0.2 0.09" rpy="0 0 0"/>  <!-- Front edge of chassis -->
+    </joint>
+    <!-- ================================================== -->
+    <link name="left_bumper">
+        <visual>
+            <geometry>
+                <cylinder length="0.12" radius="0.05"/>  <!-- Half chassis height -->
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="0.12" radius="0.05"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="0.12" radius="0.05">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+    <gazebo reference="left_bumper">
+        <material>Gazebo/White</material>
+        <mu1 value="0.3"/>  <!-- Smoother sliding -->
+        <mu2 value="0.3"/>
+    </gazebo>
+
+    <!-- ================================================== RIGHT BUMPER (Rounded Edge) ================================================== -->
+    <joint name="right_bumper_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="right_bumper"/>
+        <origin xyz="0.247 -0.2 0.09" rpy="0 0 0"/>  <!-- Rear edge of chassis -->
+    </joint>
+    <!-- ================================================== -->
+    <link name="right_bumper">
+        <visual>
+            <geometry>
+                <cylinder length="0.12" radius="0.05"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="0.12" radius="0.05"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="0.12" radius="0.05">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+    <gazebo reference="right_bumper">
+        <material>Gazebo/White</material>
+        <mu1 value="0.3"/>
+        <mu2 value="0.3"/>
+    </gazebo>
+
+    <!-- ==================================================  FRONT BUMPER joint, link ================================================== -->
+    <joint name="front_bumper_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="front_bumper"/>
+        <origin xyz="0 0 0"/>
+    </joint>
+    <!-- ================================================== -->
+
+    <link name="front_bumper">
+        <visual>
+            <origin xyz="0.273 0 0.09" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.4 0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.4 0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.1" x="0.05" y="0.4" z="0.1">
+            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="front_bumper">
+        <material>Gazebo/Blue</material>
+        <mu1 value="0.3"/>
+        <mu2 value="0.3"/>
     </gazebo>
 
     <!-- ==================================================  FRONT LEFT WHEEL joint, link ================================================== -->
@@ -207,65 +300,65 @@
     </gazebo>
 
     <!-- ================================================== REAR BACK LEFT WHEEL joint, link ================================================== -->
-    <joint name="rear_back_left_wheel_joint" type="fixed">
+    <joint name="rear_back_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="rear_back_left_wheel"/>
-        <origin xyz="-0.26 0.225 0.01" rpy="-${pi/2} 0 0"/>
-        <!--axis xyz="0 0 1"/-->
+        <origin xyz="-0.26 0.225 0" rpy="-${pi/2} 0 0"/>
+        <axis xyz="0 0 1"/>
     </joint>
     <!-- ================================================== -->
 
     <link name="rear_back_left_wheel">
         <visual>
             <geometry>
-                <cylinder length="0.07" radius="0.06" />
+                <cylinder length="0.075" radius="0.07" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision>
             <geometry>
-                <cylinder length="0.07" radius="0.06" />
+                <cylinder length="0.075" radius="0.07" />
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.2" length="0.07" radius="0.06">
+        <xacro:inertial_cylinder mass="0.2" length="0.07" radius="0.07">
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
     <gazebo reference="rear_back_left_wheel">
         <material>Gazebo/Gray</material>
-        <mu1 value="0.3"/> 
-        <mu2 value="0.3"/> 
+        <mu1 value="0.5"/> 
+        <mu2 value="0.5"/> 
     </gazebo>
 
     <!-- ================================================== REAR BACK RIGHT WHEEL joint, link ================================================== -->
-    <joint name="rear_back_right_wheel_joint" type="fixed">
+    <joint name="rear_back_right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="rear_back_right_wheel"/>
-        <origin xyz="-0.26 -0.225 0.01" rpy="${pi/2} 0 0"/>
-        <!--axis xyz="0 0 -1"/-->
+        <origin xyz="-0.26 -0.225 0" rpy="${pi/2} 0 0"/>
+        <axis xyz="0 0 -1"/>
     </joint>
     <!-- ================================================== -->
 
     <link name="rear_back_right_wheel">
         <visual>
             <geometry>
-                <cylinder length="0.07" radius="0.06" />
+                <cylinder length="0.075" radius="0.07" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision>
             <geometry>
-                <cylinder length="0.07" radius="0.06" />
+                <cylinder length="0.075" radius="0.07" />
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.2" length="0.07" radius="0.06">
+        <xacro:inertial_cylinder mass="0.2" length="0.075" radius="0.07">
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
     <gazebo reference="rear_back_right_wheel">
         <material>Gazebo/Gray</material>
-        <mu1 value="0.3"/>
-        <mu2 value="0.3"/>
+        <mu1 value="0.5"/>
+        <mu2 value="0.5"/>
     </gazebo>
     
 </robot>

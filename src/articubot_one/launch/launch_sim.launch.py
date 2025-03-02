@@ -64,11 +64,11 @@ def generate_launch_description():
     )
 
     twist_mux = Node(
-        package='twist_mux', 
-        executable='twist_mux', 
+        package='twist_mux',
+        executable='twist_mux',
         output='screen',
-        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'twist_mux.yaml')],
-        remappings=[('/cmd_vel', '/diff_cont/cmd_vel_unstamped')]  # Nav2 → twist_mux
+        parameters=[os.path.join(get_package_share_directory('articubot_one'), 'config', 'twist_mux.yaml')],
+        remappings=[('/cmd_vel', '/diff_cont/cmd_vel_unstamped')],
     )
 
     # Launch them all!
