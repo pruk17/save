@@ -43,7 +43,7 @@ class keyboard_control(Node):
         self.gripperUpDownVel: float = 0.0
         self.maxGripperSlideVel: float = 0.5
         self.maxGripperUpDownVel: float = 0.5
-        self.gripperIncrement: float = 0.1
+        self.gripperIncrement: float = 0.05
         
         self.show_log()
         self.get_logger().info("Keyboard publishered : Message by pressing keys : Press 'p' to quit.")

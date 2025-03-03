@@ -27,8 +27,8 @@
             <surface>
                 <friction>
                     <ode>
-                        <mu>3.0</mu>  <!-- Increase primary friction -->
-                        <mu2>3.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>5.0</mu>  <!-- Increase primary friction -->
+                        <mu2>5.0</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -74,8 +74,8 @@
             <surface>
                 <friction>
                     <ode>
-                        <mu>3.0</mu>  <!-- Increase primary friction -->
-                        <mu2>3.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>5.0</mu>  <!-- Increase primary friction -->
+                        <mu2>5.0</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -121,8 +121,8 @@
             <surface>
                 <friction>
                     <ode>
-                        <mu>3.0</mu>  <!-- Increase primary friction -->
-                        <mu2>3.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>5.0</mu>  <!-- Increase primary friction -->
+                        <mu2>5.0</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
