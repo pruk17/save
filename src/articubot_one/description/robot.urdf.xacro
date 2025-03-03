@@ -7,8 +7,8 @@
     <xacro:include filename="lidar.xacro" />
     
     
-    <xacro:include filename="gripper.xacro" />
-    <xacro:include filename="gripper_tranmission.xacro" />
+    <xacro:include filename="gripper_core.xacro" />
+    <xacro:include filename="gripper_urdf.xacro" />
     <xacro:include filename="gazebo_plugin.xacro"/>
 
     <xacro:robot_controller/> 
