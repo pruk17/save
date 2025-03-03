@@ -20,7 +20,7 @@ def generate_launch_description():
     
     # Paths to parameter files
     pkg_share = get_package_share_directory(package_name)
-    world_file = os.path.join(pkg_share, 'worlds', 'MNP_mapNoBotnRedDot3.world')
+    world_file = os.path.join(pkg_share, 'worlds', 'MNP_mapNoBotnRedDot5.world')
     nav2_params = os.path.join(pkg_share, 'config', 'nav2_params.yaml')
     slam_params = os.path.join(pkg_share, 'config', 'mapper_params_online_async.yaml')
     
